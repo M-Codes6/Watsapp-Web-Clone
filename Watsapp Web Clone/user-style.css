@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#chat-conversation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%; 
+    background-color: #577486;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0; 
+    overflow-y: auto; 
+}
+  
+#chat-conversation .nav-bar {
+    height: 8vh;
+    width: 100%;
+    background: #202c33;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    position: absolute;
+}
+
+#chat-conversation .nav-bar .left-icons,
+#chat-conversation .nav-bar .right-icons {
+    display: flex;
+    align-items: center;
+    color: #ccc;
+    gap: 20px;
+}
+
+#chat-conversation .nav-bar .left-icons img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+#chat-conversation .nav-bar .user-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #a7a4a4;
+}
+
+#chat-conversation .right-icons {
+    margin-left: 650px; 
+}
+
+#chat-conversation .right-icons span {
+    margin-left: auto;
+}
+
+#chat-conversation .right-icons span[data-icon="video-call"] svg {
+    color: #5d717c;
+}
+#chat-conversation .right-icons span[data-icon="search-alt"] svg {
+    color: #ccc;
+}
+
+#chat-conversation .right-icons span[data-icon="menu"] svg {
+    color: #ccc;
+}
+
+#chat-conversation .message-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    height: 10vh;
+    bottom: 0;
+    position: fixed;
+    background: #202c33;
+    color: #5d717c;
+}
+
+#chat-conversation .message-bar .left {
+    display: flex;
+    align-items: center;
+}
+
+#chat-conversation .message-bar .left , .plus {
+font-size: 30px;
+margin-left: 40px;
+cursor: pointer;
+}
+
+#chat-conversation .message-bar .center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#chat-conversation .center textarea {
+    width: 90%;
+    padding: 5px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    resize: none; 
+    font-size: 16px;
+    color: #ccc;
+    background: #2c3a42;
+}
+
+#chat-conversation .right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#chat-conversation  .right button {
+    background-color: #202c33; 
+    color: #5d717c; 
+    border: none; 
+    padding: 10px 15px; 
+    border-radius: 50%;
+    cursor: pointer; 
+    margin: 10px;
+}
+
+
